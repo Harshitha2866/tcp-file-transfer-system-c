@@ -75,8 +75,11 @@ app.delete("/delete/:filename", (req, res) => {
 
 });
 
+// Serve frontend
+app.use(express.static(path.join(__dirname, "..", "client")));
+
 app.get("/", (req, res) => {
-  res.send("TCP File Transfer Server is Running");
+  res.sendFile(path.join(__dirname, "..", "client", "index.html"));
 });
 
 // Start Server
