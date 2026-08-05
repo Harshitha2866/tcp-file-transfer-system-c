@@ -1,4 +1,5 @@
-const API = "http://localhost:3000";
+const API = window.location.origin;
+
 
 async function uploadFile() {
     const fileInput = document.getElementById("fileInput");
