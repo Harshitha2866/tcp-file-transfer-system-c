@@ -12,8 +12,6 @@ app.use(express.json());
 
 // Upload folder
 const uploadFolder = path.join(__dirname, "..", "uploads");
-console.log("Upload folder:", uploadFolder);
-console.log("Files:", fs.existsSync(uploadFolder) ? fs.readdirSync(uploadFolder) : "Folder not found");
 // Configure multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
