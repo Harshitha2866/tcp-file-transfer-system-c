@@ -30,7 +30,7 @@ The project demonstrates TCP socket programming, REST API development and respon
   - Server Status
 - File-type icons using Font Awesome
 - Modern card-based interface with gradient styling
-![Dashboard](screenshots/dashboard.png)
+
 ---
 
 ## Tech Stack
@@ -270,28 +270,11 @@ Download Complete.
 
 ### Web Dashboard
 
-> Add your dashboard screenshot here.
+![Dashboard](screenshots/dashboard.png)
 
 ```text
 screenshots/dashboard.png
 ```
-
-### Upload Page
-
-> Add your upload page screenshot here.
-
-```text
-screenshots/upload.png
-```
-
-### File Manager
-
-> Add your file manager screenshot here.
-
-```text
-screenshots/file-manager.png
-```
-
 ---
 
 ## Concepts Demonstrated
