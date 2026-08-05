@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCP File Transfer System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            TCP File Transfer System
+        </h1>
+        <p class="subtitle">Web Interface for C Winsock TCP Client-Server Application</p>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2 id="totalFiles">0</h2>
+                <p>Total Files</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>TCP</h2>
+                <p>Protocol</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="serverStatus">🟢</h2>
+                <p>Server Status</p>
+            </div>
+
+        </div>
+
+        <div class="card upload-card">
+
+            <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+
+            <h2>Drag & Drop Files</h2>
+
+            <p>or choose a file below</p>
+
+            <input type="file" id="fileInput">
+
+            <button onclick="uploadFile()">
+                Upload File
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div class="file-header">
+
+                <h2>Available Files</h2>
+
+                <input type="text" id="search" placeholder="🔍 Search files..." onkeyup="searchFiles()">
+
+            </div>
+
+            <ul id="fileList"></ul>
+
+        </div>
+
+        <div id="status"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        Built using HTML, CSS, JavaScript, Node.js, Express & C (Winsock)
+    </footer>
+
+</body>
+
+</html>
