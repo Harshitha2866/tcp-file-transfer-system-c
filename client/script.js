@@ -28,6 +28,7 @@ async function loadFiles() {
 
     const response = await fetch(API + "/files");
     const files = await response.json();
+    alert(JSON.stringify(files));
 
     document.getElementById("totalFiles").innerText = files.length;
 
