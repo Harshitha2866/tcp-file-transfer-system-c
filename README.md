@@ -30,7 +30,7 @@ The project demonstrates TCP socket programming, REST API development and respon
   - Server Status
 - File-type icons using Font Awesome
 - Modern card-based interface with gradient styling
-
+![Dashboard](screenshots/dashboard.png)
 ---
 
 ## Tech Stack
